@@ -1,36 +1,28 @@
-# Code Challenge: FizzBuzz
+# **Code Challenge: Print Fibonacci**
 
-## Instructions
+**Instructions**
 
-1. Clone down this assignment to your `code-challenges' directory in AWS Cloud9.  
-2. Code your solution using JavaScript in `index.js`. 
-3. **Be sure to run and test your code throughly!**
-4. By the end of Code Challenge, **commit and push your changes up to Github**.
+1. Clone down this assignment to your `tip-challenges` directory in your environment.
+2. Code your solution using JavaScript in `index.js`.
+3. **Be sure to run and test your code thoroughly.**
+4. By the end of class, **commit and push your changes up to Github**.
 5. Using the browser, verify that your solution is in your remote repo on Github.
 
-## Code Problems
+---
 
-1. Write a function named `fizzBuzz` that prints the numbers from 1 to 100. But for multiples of three console.log “Fizz” instead of the number and for the multiples of five console.log “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
-```
-fizzBuzz() // console.logs: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 4, FizzBuzz, 16, 17 ...
-```
+## index.js
 
-2. Write a function named `fizzBuzzN` that takes in an integer argument and prints the numbers from 1 to `n`. But for multiples of three console.log “Fizz” instead of the number and for the multiples of five console.log “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
-```
-fizzBuzzN(15) // console.logs: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz
-```
+**Problem Description**
 
-3. Write a function named `fizzBuzzArray` that takes in an integer argument, `number`, and returns an array of strings, `answer`, where:
+Write a function that prints the first `n` Fibonacci numbers using **only variables and a loop** — no arrays needed. 
 
-- `answer[i] == "FizzBuzz"` if `i` is divisible by `3` and `5`.
-- `answer[i] == "Fizz"` if `i` is divisible by `3`.
-- `answer[i] == "Buzz"` if `i` is divisible by `5`.
-- `answer[i] == i` if non of the above conditions are true.
+The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence begins:
 
-The output array's length should be equal to the given integer `number` and the first index will be `1` and the last index will be `number`
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
-```
-fizzBuzzArray(3) // returns ["1","2","Fizz"]
-fizzBuzzArray(5) // returns ["1","2","Fizz","4","Buzz"]
-fizzBuzzArray(15) // returns ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
+**Example**
+
+```jsx
+printFibonacci(5);  // should print 0, 1, 1, 2, 3
+printFibonacci(10); // should print 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 ```
